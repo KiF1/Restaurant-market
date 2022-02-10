@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wfood</title>
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon" />
+
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <div class="navbar-brand secondary-color" href="#">
+          <img src="./Imagens/logo.png"  alt="Wfood" />
+          <span>Wfood</span>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse align-items-center " id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+            <li class="nav-item">
+              <a class="nav-link  secondary-color"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondary-color" aria-current="page" href="#cartas">Pratos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondary-color" aria-current="page" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link secondary-color" aria-current="page" href="#promotions">promoções</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disable secondary-color" aria-current="page" href="#request">Faça seu pedido</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <input type="checkbox" name="theme" id="switch">
+          <label id="label-dark" for="switch"></label></div>
+          </div>
+      </div>
+        
+    </nav>
+
+   <!-- Carrosel -->
+   <div id="carouselSlider" class="carousel slider" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Imagens/bnn1.jpg" class="d-block w-100 w200" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Imagens/bnn2.jpg" class="d-block w-100 w200" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Imagens/bnnp.jpg" class="d-block w-100 w200" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- CARDS -->
+   <div class="text" id="cartas">
+    <h1 class="prt">Nossos Pratos</h1>
+    <h2 class="pratos">PRINCIPAIS PRATOS</h2>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="./Imagens/pexels-caleb-oquendo-3023479.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">X-Gyk</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="#" class="btn btn-text">Peça agora</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./Imagens/pexels-engin-akyurt-2271107.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">X-Wkl</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="#" class="btn btn-text">Peça agora</a>
+        </div>
+      </div>
+    </div> 
+   <div class="col">
+      <div class="card">
+        <img src="./Imagens/pexels-jonathan-borba-2983101.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">X-Array</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
+          <a href="#" class="btn btn-text">Peça agora</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./Imagens/pexels-robin-stickel-70497.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="#" class="btn btn-text">Peça agora</a>
+        </div>
+      </div>
+    </div>
+     <div class="col">
+      <div class="card">
+        <img src="./Imagens/pexels-valeria-boltneva-1639557.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">X-Minux</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="#" class="btn btn-text">Peça agora</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./Imagens/pexels-samfotograffo-3052362.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Duple-X</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="#" class="btn btn-text">Peça agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Sobre -->
+
+ <section class="about" id="about">
+    <div class="initial">
+    <h3 class="sub-heading">Sobre Nós</h3>
+    <h1 class="heading">Porque escolher-nos?</h1>
+</div>
+    <div class="abt">
+        <div class="image">
+            <img src="./Imagens/image.jpg">
+        </div>
+
+        <div class="content">
+            <h3>Melhor Comida do País</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore porro repellendus autem ad
+                molestiae
+                error, eligendi, tempore at nisi maxime, accusamus aut? Qui, inventore. Maxime dolores quidem
+                eligendi
+                totam dolorum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto possimus quasi totam quos illum
+                quibusdam atque, non qui nihil culpa!</p>
+            <div class="icons-content">
+                <div class="icons">
+                    <img src="./Imagens/caminhao-de-entrega.png">
+                    <span>Entrega Grátis</span>
+                </div>
+
+                <div class="icons">
+                    <img src="./Imagens/cifrao.png">
+                    <span>Pagamento Fácil</span>
+                </div>
+
+                <div class="icons">
+                    <img src="./Imagens/fone-de-ouvido.png">
+                    <span>Serviço 24/7</span>
+                </div>
+            </div>
+
+            <a href="#request" class="btn">Saber Mais</a>
+        </div>
+    </div>
+</section> -->
+
+
+<!-- PROMOÇÕES -->
+
+<div class="banner" id="banner">
+  <div id="carouselExampleSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Imagens/prom.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+<div class="promotions" id="promotions">
+  <div class="card bg-dark text-white">
+    <img src="./Imagens/RESP.png" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <a href="#" class="btn  btn-text">Peça agora</a>
+    </div>
+  </div>
+  <div class="card bg-dark text-white">
+    <img src="./Imagens/desc.png" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <a href="#" class="btn  btn-text">Peça agora</a>
+    </div>
+  </div>
+  <div class="card bg-dark text-white">
+    <img src="./Imagens/descs.png" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-texts">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <a href="#" class="btn  btn-text">Peça agora</a>
+    </div>
+  </div>
+</div>
+<!-- PEDIDOS -->
+
+ <section class="request" id="request">
+   <div class="initial">
+  <h3 class="sub-heading">Peça Agora</h3>
+  <h1 class="heading">Grátis e Rápido</h1></div>
+
+
+  <div class="row">
+      <div class="image">
+          <img src="./Imagens/jjj.jpg">
+      </div>
+
+      <form action="#" method="post">
+          <div class="inputBox">
+              <input type="text" placeholder="Nome:">
+              <input type="email" placeholder="Email:">
+          </div>
+
+          <div class="inputBox">
+              <input type="tel" placeholder="Número:">
+              <input type="text" placeholder="Comida Escolhida:">
+          </div>
+
+          <textarea placeholder="Endereço:"></textarea>
+
+          <input type="submit" value="Peça Agora" class="btn">
+  </div>
+    </div>
+  </footer>
+
+  </div>
+  
+  
+</section>  
+
+
+<!--FOOTER -->
+ <footer class="footer" id="footer">
+  <div class="social">
+      <a href="https://www.instagram.com/abner.nt" target="_blank"><img src="./Imagens/instagram.svg"
+              alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/abner-santos-b195b8228" target="_blank"><img src="./Imagens/linkedin.svg"
+              alt="Linkedin"></a>
+      <a href="mailto:abner.kif1@hotmail.com"><img src="./Imagens/email.svg" alt="Outlook"></a>
+  </div>
+  <div class="copyright">
+      <p>&copy; Abner Santos</p>
+  </div>
+</footer>
+
+<div class="loader-container">
+  <img src="./assets/loader.gif">
+</div>
+
+<script src="./script.js"></script>
+  </body>
+  </html>
+
